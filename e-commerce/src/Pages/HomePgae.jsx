@@ -1,11 +1,11 @@
 import './HomePage.css';
-import './header.css';
+import {Header} from '../components/Header';
 import { Link } from 'react-router-dom';
  
  export function HomePage() {
     return (
     <>
-    <div className="header">
+    {/* <div className="header">
       <div className="left-section">
         <Link to="/" className="header-link">
           <img className="logo"
@@ -35,7 +35,8 @@ import { Link } from 'react-router-dom';
           <div className="cart-text">Cart</div>
         </Link>
       </div>
-    </div>
+    </div> */}
+    <Header />
 
     <div className="home-page">
       <div className="products-grid">

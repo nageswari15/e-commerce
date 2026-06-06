@@ -1,11 +1,11 @@
 import './ordersPage.css'
-import './header.css';
+import {Header} from '../components/Header';
 import { Link } from 'react-router-dom';
 
 export function OrdersPage() {
     return (
         <>
-            <div className="header">
+            {/* <div className="header">
                 <div className="left-section">
                     <Link to="/" className="header-link">
                         <img className="logo"
@@ -35,7 +35,8 @@ export function OrdersPage() {
                         <div className="cart-text">Cart</div>
                     </Link>
                 </div>
-            </div>
+            </div> */}
+            <Header />
 
             <div className="orders-page">
                 <div className="page-title">Your Orders</div>
