@@ -1,6 +1,4 @@
  export function formatMoney(amountCents) {
-    return (
-      `${(amountCents/100).toFixed(2)}`
-    );
-
+    const amount = Number(amountCents) || 0;
+    return `$${(amount / 100).toFixed(2)}`;
 }
