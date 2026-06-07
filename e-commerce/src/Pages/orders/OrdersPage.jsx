@@ -1,9 +1,9 @@
 import axios from 'axios';
 import dayjs from 'dayjs';
-import { formatMoney } from '../utils/money';
+import { formatMoney } from '../../utils/money';
 import { useEffect, useState,Fragment } from 'react';
 import './ordersPage.css'
-import { Header } from '../components/Header';
+import { Header } from '../../components/Header';
 import { Link } from 'react-router-dom';
 
 export function OrdersPage({ cart }) {
@@ -51,7 +51,7 @@ export function OrdersPage({ cart }) {
                                     {order.products.map((orderProduct) => {
                                         const product = orderProduct.product || {};
                                         return (
-                                     <Fragment key={orderProduct.id}>
+                                     <Fragment key={`${order.id}-${orderProduct.productId}`}>
 
                                          <div className="product-image-container">
                                 <img src={product.image} />
