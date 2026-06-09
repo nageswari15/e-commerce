@@ -13,14 +13,16 @@ export function CheckoutPage({ cart }) {
     const [paymentSummary, setPaymentSummary] = useState(null);
 
    useEffect(() => {
-        axios.get('/api/delivery-options?expand=estimatedDeliveryTime')
-        .then((response) => {
+   const fetchDataCheckout = async () => {
+     let response=await axios.get('/api/delivery-options?expand=estimatedDeliveryTime')
             setDeliveryOptions(response.data);
-        });
-        axios.get('/api/payment-summary')
-        .then((response) => {
+       
+        response=await axios.get('/api/payment-summary')
             setPaymentSummary(response.data);
-        });
+    
+   };
+    fetchDataCheckout();
+
     }, [])
 
     return (
@@ -36,7 +38,7 @@ export function CheckoutPage({ cart }) {
 
                     <div className="checkout-header-middle-section">
                         Checkout (<Link className="return-to-home-link"
-                            to="/">3 items</Link>)
+                            to="/">{paymentSummary?.totalItems ?? cart.length} items</Link>)
                     </div>
 
                     <div className="checkout-header-right-section">

@@ -11,6 +11,7 @@ export function OrdersPage({ cart }) {
     useEffect(() => {
         axios.get('/api/orders?expand=products')
             .then((response) => {
+                console.log('Orders API response:', response.data);
                 setOrders(response.data);
             });
     }, []);
