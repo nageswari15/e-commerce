@@ -7,7 +7,7 @@ import {ProductsGrid} from './productsGrid';
 
 import { Link } from 'react-router-dom';
  
- export function HomePage({cart}) {
+ export function HomePage({cart, loadCart}) {
     const [products, setProducts] = useState([]);
    
     useEffect(() => {
@@ -25,7 +25,7 @@ import { Link } from 'react-router-dom';
     <Header cart={cart}/>
 
     <div className="home-page">
-     <ProductsGrid products={products}/>
+     <ProductsGrid products={products} loadCart={loadCart}/>
     </div>
     </>
 
