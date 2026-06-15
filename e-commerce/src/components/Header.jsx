@@ -1,11 +1,29 @@
 import './header.css';
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
-export function Header({cart = []}) {
+export function Header({cart = [], onSearch}) {
+    const [searchTerm, setSearchTerm] = useState('');
     let totalQuantity = 0;
     cart.forEach((cartItem) => {
         totalQuantity += cartItem.quantity;
     });
+
+    const handleChange = (e) => {
+        const newTerm = e.target.value;
+        setSearchTerm(newTerm);
+        if (onSearch) {
+            onSearch(newTerm);
+        }
+    };
+
+    const handleClear = () => {
+        setSearchTerm('');
+        if (onSearch) {
+            onSearch('');
+        }
+    };
+
     return (
         <div className="header">
             <div className="left-section">
@@ -18,11 +36,18 @@ export function Header({cart = []}) {
             </div>
 
             <div className="middle-section">
-                <input className="search-bar" type="text" placeholder="Search" />
-
-                <button className="search-button">
-                    <img className="search-icon" src="/images/icons/search-icon.png" />
-                </button>
+                <input 
+                    className="search-bar" 
+                    type="text" 
+                    placeholder="Search" 
+                    value={searchTerm}
+                    onChange={handleChange}
+                />
+                {searchTerm && (
+                    <button className="clear-button" onClick={handleClear} title="Clear search">
+                        ✕
+                    </button>
+                )}
             </div>
 
             <div className="right-section">

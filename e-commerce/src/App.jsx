@@ -4,6 +4,7 @@ import axios from 'axios'
 import { HomePage } from './Pages/home/HomePgae'
 import { CheckoutPage } from './Pages/checkout/checkout'
 import { OrdersPage } from './Pages/orders/OrdersPage'
+import { Tracking } from './Pages/tracking/Tracking'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
@@ -25,6 +26,7 @@ useEffect(() => {
       <Route path="/" element={<HomePage cart={cart} loadCart={loadCart}/>} />
       <Route path="/checkout" element={<CheckoutPage  cart={cart} loadCart={loadCart}/>} />
       <Route path="/orders" element={<OrdersPage  cart={cart}/>} />
+      <Route path="/tracking/:orderId" element={<Tracking cart={cart}/>} />
     </Routes>
   )
 }

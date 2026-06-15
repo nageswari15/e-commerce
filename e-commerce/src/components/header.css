@@ -80,6 +80,10 @@
   border-bottom-right-radius: 0;
 }
 
+.header .search-bar:focus {
+  outline: none;
+}
+
 .header .search-button {
   background-color: rgb(186, 255, 190);
   border: none;
@@ -88,6 +92,23 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   flex-shrink: 0;
+}
+
+.header .clear-button {
+  background-color: white;
+  border: none;
+  padding: 0 8px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(8, 79, 45);
+  font-weight: bold;
+  flex-shrink: 0;
+  transition: background-color 0.2s;
+}
+
+.header .clear-button:hover {
+  background-color: #f0f0f0;
 }
 
 .header .search-icon {
