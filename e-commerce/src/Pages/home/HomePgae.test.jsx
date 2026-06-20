@@ -69,7 +69,6 @@ describe('home page components', () => {
     const header = await screen.findByTestId('header');
     expect(header).toBeInTheDocument();
   });
-
   it('handles empty products list', async () => {
     axios.get.mockResolvedValueOnce({ data: [] });
 
