@@ -1,17 +1,106 @@
-## Intro to the Project
-This is the backend for the [ecommerce-project](https://github.com/SuperSimpleDev/ecommerce-project).
-- 95% of the code was generated with AI.
+# 🛒 E-Commerce Web Application
 
-## Video Tutorials
-**Part 1 - Create the Backend:** https://youtu.be/vBprybSmJs8
+A full-stack E-Commerce web application built using React.js, Node.js, Express.js, and MongoDB. It enables users to browse products, search items, manage their shopping cart, and place orders through a responsive and user-friendly interface.
 
-## Set up this backend
-1. Make sure you have NodeJS installed (version 22+). If not, [click here to install](https://nodejs.org/).
-2. Download this code by clicking the green `Code` button (in the top-right) > Click `Download Zip`.
-3. Unzip the code. On Windows, right-click the zip file > `Extract All`. On Mac, double-click the zip file.
-4. Open this code in VSCode.
-5. At the top menu of VSCode, click `Terminal` > `New Terminal`.
-6. In the Terminal, run `npm install`, and run `npm run dev`.
+---
 
-## Troubleshooting
-If you run into issues, see the [troubleshooting steps](troubleshooting.md).
+## 🚀 Features
+
+- Product Listing
+- Product Search
+- Category Filtering
+- Product Details
+- Add to Cart
+- Remove from Cart
+- Responsive User Interface
+- REST API Integration
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Vite
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+
+### Tools
+- Git
+- GitHub
+- VS Code
+- Postman
+
+---
+
+## 📂 Project Structure
+
+```
+e-commerce/
+├── frontend/
+├── ecommerce-backend/
+└── README.md
+```
+
+---
+
+## 💻 Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/nageswari15/e-commerce.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd e-commerce
+```
+
+### 3. Install frontend dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the frontend
+
+```bash
+npm run dev
+```
+
+### 5. Open a new terminal and start the backend
+
+```bash
+cd ecommerce-backend
+npm install
+npm start
+```
+---
+
+## 📚 What I Learned
+
+- Building reusable React components
+- REST API integration
+- React Hooks for state management
+- Responsive UI development
+- Git version control
+- Frontend and backend integration
+
+---
+
+## 👩‍💻 Author
+
+**Siva Nageswari Putta**
+
+GitHub: https://github.com/nageswari15
+
+LinkedIn: https://linkedin.com/in/siva-nageswari-putta-1b308531a
