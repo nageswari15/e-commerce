@@ -2,7 +2,7 @@
   height: 60px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: white;
+  background-color: rgb(255, 193, 7);
 
   display: flex;
   justify-content: center;
@@ -29,6 +29,13 @@
 .checkout-header .logo {
   height: 26px;
   margin-top: 0px;
+}
+
+.checkout-header .brand-text {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .checkout-header .mobile-logo {
@@ -61,14 +68,15 @@
 
   font-size: 22px;
   font-weight: 500;
+  color: white;
 
   display: flex;
   justify-content: center;
 }
 
-.checkout-header .return-to-home-link {
-  color: rgb(25, 135, 84);
-
+.checkout-header .return-to-home-link,
+.checkout-header .header-link {
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }

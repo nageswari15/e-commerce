@@ -37,11 +37,10 @@ import { Link } from 'react-router-dom';
 
     return (
     <>
-   
     <Header cart={cart} onSearch={handleSearch}/>
 
     <div className="home-page">
-     <ProductsGrid products={products} loadCart={loadCart}/>
+      <ProductsGrid products={products} loadCart={loadCart}/>
     </div>
     </>
 

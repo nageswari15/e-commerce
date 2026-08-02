@@ -1,5 +1,5 @@
 .header {
-  background-color: rgb(8, 79, 45);
+  background-color: rgb(255, 193, 7);
   color: white;
   padding-left: 15px;
   padding-right: 15px;
@@ -32,6 +32,7 @@
   cursor: pointer;
   text-decoration: none;
   border: 1px solid rgba(0, 0, 0, 0);
+  color: white;
 }
 
 .header .header-link:hover {
@@ -41,6 +42,14 @@
 .header .logo {
   height: 26px;
   margin-top: 1px;
+}
+
+.header .brand-text {
+  display: inline-block;
+  margin-left: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .header .mobile-logo {
@@ -85,7 +94,7 @@
 }
 
 .header .search-button {
-  background-color: rgb(186, 255, 190);
+  background-color: rgba(255, 193, 7, 0.25);
   border: none;
   width: 45px;
   height: 40px;
@@ -101,7 +110,7 @@
   height: 40px;
   cursor: pointer;
   font-size: 18px;
-  color: rgb(8, 79, 45);
+  color: rgb(255, 193, 7);
   font-weight: bold;
   flex-shrink: 0;
   transition: background-color 0.2s;
@@ -157,7 +166,7 @@
 }
 
 .header .cart-quantity {
-  color: rgb(8, 79, 45);
+  color: rgb(255, 193, 7);
   font-size: 14px;
   font-weight: 700;
 
